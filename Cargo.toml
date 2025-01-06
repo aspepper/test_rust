@@ -1,0 +1,14 @@
+[package]
+name = "bolinha"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+crossterm = "0.28.1"
+
+[profile.release]
+opt-level = "z"        # Otimiza para menor tamanho possível
+strip = true           # Remove símbolos de depuração
+lto = "fat"            # Link Time Optimization (reduz binário)
+panic = "abort"        # Reduz código relacionado ao tratamento de panics
+codegen-units = 1      # Reduz unidades de código geradas
