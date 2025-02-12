@@ -11,7 +11,7 @@ fn main() {
     let start = Instant::now();
 
     // Realiza cálculos complexos utilizando paralelismo
-    let result: f64 = (1..=10_000_000)
+    let result: f64 = (1..=100_000_000)
         .into_par_iter()
         .map(|i| {
             let i_f64 = i as f64;
