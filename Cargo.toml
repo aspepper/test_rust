@@ -3,6 +3,23 @@ name = "teste_rust"
 version = "0.1.0"
 edition = "2021"
 
+[[bin]]
+name = "complex_calc"
+path = "src/complex_calc.rs"
+
+[[bin]]
+name = "matrix_mul"
+path = "src/matrix_mul.rs"
+
+[[bin]]
+name = "sieve"
+path = "src/sieve.rs"
+
+[[bin]]
+name = "thread_spawn"
+path = "src/thread_spawn.rs"
+
+
 [dependencies]
 rayon = "1.7"  # Utilize a versão mais recente disponível, se necessário.
 

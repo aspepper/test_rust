@@ -1,3 +1,7 @@
+/*
+cargo build --release --bin complex_calc
+*/
+
 use rayon::prelude::*;
 use std::time::Instant;
 use std::io::{self, Write};
@@ -21,12 +25,11 @@ fn main() {
 
     // Calcula a duração em milissegundos
     let duration = start.elapsed();
-    println!("Rust: Execution time: {} ms", duration.as_millis());
+    println!("Rust: Complex Calc:  {} ms", duration.as_millis());
 
     // Apenas para utilizar o resultado e evitar otimizações agressivas que removam o loop
     println!("Result: {}", result);
 }
-
 
 /* Exemplo de bolinha
 
