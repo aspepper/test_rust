@@ -1,5 +1,6 @@
 /*
-cargo build --release --bin sieve
+ name: sieve.rs
+ compiling: cargo build --release --bin sieve
 */
 
 use std::time::Instant;

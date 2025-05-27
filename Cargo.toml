@@ -19,9 +19,14 @@ path = "src/sieve.rs"
 name = "thread_spawn"
 path = "src/thread_spawn.rs"
 
+[[bin]]
+name = "bolinha"
+path = "src/bolinha.rs"
+
 
 [dependencies]
-rayon = "1.7"  # Utilize a versão mais recente disponível, se necessário.
+rayon = "1.7"
+crossterm = "0.29.0"
 
 [profile.release]
 opt-level = "z"        # Otimiza para menor tamanho possível

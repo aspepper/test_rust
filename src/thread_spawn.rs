@@ -1,5 +1,6 @@
 /*
-cargo build --release --bin thread_spawn
+ name: thread_spawn.rs
+ compiling: cargo build --release --bin thread_spawn
 */
 
 use std::thread;

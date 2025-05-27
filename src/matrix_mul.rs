@@ -1,5 +1,6 @@
 /*
-cargo build --release --bin matrix_mul
+ name: matrix_mul.rs
+ compiling: cargo build --release --bin matrix_mul
 */
 
 use rayon::prelude::*;
